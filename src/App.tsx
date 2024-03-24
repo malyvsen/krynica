@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Sample from "./Sample";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,18 @@ function App() {
         value={sampleText}
         onChange={(e) => setSampleText(e.target.value)}
       />
-      <div className="cormorant-garamond-regular">{sampleText}</div>
+      <Sample fontName="Cormorant">{sampleText}</Sample>
+      <Sample fontName="Playfair">{sampleText}</Sample>
+      <Sample fontName="EB Garamond">{sampleText}</Sample>
+      <Sample fontName="Bona Nova">{sampleText}</Sample>
+      <Sample fontName="Josefin Sans">{sampleText}</Sample>
+      <Sample fontName="Space Grotesk">{sampleText}</Sample>
+      <Sample fontName="Nova Mono">{sampleText}</Sample>
+      <Sample fontName="Quicksand">{sampleText}</Sample>
+      <Sample fontName="Raleway">{sampleText}</Sample>
+      <Sample fontName="Rajdhani">{sampleText}</Sample>
+      <Sample fontName="Labrada">{sampleText}</Sample>
+      <Sample fontName="Texturina">{sampleText}</Sample>
     </>
   );
 }
