@@ -8,16 +8,32 @@ function Sample({
   return (
     <div
       style={{
-        fontFamily: fontName,
-        fontWeight: 400,
-        fontStyle: "normal",
-        fontSize: "35px",
         outline: "1px solid black",
-        borderRadius: "10px",
-        padding: "10px",
+        padding: "8px",
       }}
     >
-      {children}
+      <a
+        style={{
+          fontFamily: "serif",
+          fontWeight: 400,
+          fontStyle: "normal",
+          fontSize: "15px",
+          color: "gray",
+        }}
+        href={`https://fonts.google.com/specimen/${fontName.replace(" ", "+")}`}
+      >
+        {fontName}
+      </a>
+      <div
+        style={{
+          fontFamily: fontName,
+          fontWeight: 400,
+          fontStyle: "normal",
+          fontSize: "35px",
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 }
