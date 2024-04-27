@@ -1,9 +1,23 @@
 import { useState } from "react";
-import Sample from "./Sample";
+import SampleList from "./SampleList";
 import "./App.css";
 
 function App() {
   const [sampleText, setSampleText] = useState("Znam 25 wróżek - i co z tego?");
+  const fonts = [
+    "Cormorant",
+    "Playfair",
+    "EB Garamond",
+    "Bona Nova",
+    "Josefin Sans",
+    "Space Grotesk",
+    "Nova Mono",
+    "Quicksand",
+    "Raleway",
+    "Rajdhani",
+    "Labrada",
+    "Texturina",
+  ];
 
   return (
     <>
@@ -15,18 +29,7 @@ function App() {
         value={sampleText}
         onChange={(e) => setSampleText(e.target.value)}
       />
-      <Sample fontName="Cormorant">{sampleText}</Sample>
-      <Sample fontName="Playfair">{sampleText}</Sample>
-      <Sample fontName="EB Garamond">{sampleText}</Sample>
-      <Sample fontName="Bona Nova">{sampleText}</Sample>
-      <Sample fontName="Josefin Sans">{sampleText}</Sample>
-      <Sample fontName="Space Grotesk">{sampleText}</Sample>
-      <Sample fontName="Nova Mono">{sampleText}</Sample>
-      <Sample fontName="Quicksand">{sampleText}</Sample>
-      <Sample fontName="Raleway">{sampleText}</Sample>
-      <Sample fontName="Rajdhani">{sampleText}</Sample>
-      <Sample fontName="Labrada">{sampleText}</Sample>
-      <Sample fontName="Texturina">{sampleText}</Sample>
+      <SampleList fonts={fonts}>{sampleText}</SampleList>
     </>
   );
 }

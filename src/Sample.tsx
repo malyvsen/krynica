@@ -8,8 +8,7 @@ function Sample({
   return (
     <div
       style={{
-        outline: "1px solid black",
-        padding: "8px",
+        marginBottom: "8px",
       }}
     >
       <a
